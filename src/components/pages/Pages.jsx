@@ -9,13 +9,16 @@ import Testimonials from './Testimonials';
 import Blog from './Blog';
 import Contact from './Contact';
 import Footer from '../common/Footer';
+import ScrollToTop from './ScrollToTop';
 
 function Pages() {
   return (
     <div>
       <Router>
         <Header />
+        <ScrollToTop/>
         <Routes>
+        
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
